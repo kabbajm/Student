@@ -11,7 +11,7 @@ using Student.Data;
 namespace Student.Migrations
 {
     [DbContext(typeof(StudentContext))]
-    [Migration("20240927105326_email")]
+    [Migration("20240927115259_email")]
     partial class email
     {
         /// <inheritdoc />
@@ -35,7 +35,7 @@ namespace Student.Migrations
                     b.Property<int>("age")
                         .HasColumnType("int");
 
-                    b.Property<string>("mail")
+                    b.Property<string>("email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
