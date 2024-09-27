@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Student.Data;
 
@@ -10,9 +11,11 @@ using Student.Data;
 namespace Student.Migrations
 {
     [DbContext(typeof(StudentContext))]
-    partial class StudentContextModelSnapshot : ModelSnapshot
+    [Migration("20240927112314_couco")]
+    partial class couco
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
