@@ -11,7 +11,7 @@ namespace Student.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<string>(
-                name: "mail",
+                name: "email",
                 table: "Students",
                 type: "nvarchar(max)",
                 nullable: false,
@@ -22,7 +22,7 @@ namespace Student.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
-                name: "mail",
+                name: "email",
                 table: "Students");
         }
     }
